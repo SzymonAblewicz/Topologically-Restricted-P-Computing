@@ -1,0 +1,5 @@
+[cubic400_s30_seed7] graph n=400 m=600 connected=True
+[cubic400_s30_seed7] partition: k=16 cut=158 T=254 (spectral, 36.0 s)
+[cubic400_s30_seed7] clusters: 16 by PSSA wBC, 0 by the complete graph embedding, 19.2 s
+[cubic400_s30_seed7]   corridor width 26: L=141, 0 unrouted, 9 s
+[cubic400_s30_seed7] joined: L=141 valid=True 600/600 edges, 0 unrouted, 9.0 s

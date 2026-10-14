@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The fallback method</title>
+<!-- The link preview, wherever the page is shared. -->
+<meta name="description" content="The fallback method on a random cubic graph with 960 vertices, partitioned and embedded on KG(638,638), replayed from its recorded run.">
+<meta property="og:title" content="The fallback method">
+<meta property="og:description" content="The fallback method on a random cubic graph with 960 vertices, partitioned and embedded on KG(638,638), replayed from its recorded run.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://szymonablewicz.github.io/Topologically-Restricted-P-Computing/figures/fig23_simulation/">
+<meta property="og:image" content="https://szymonablewicz.github.io/Topologically-Restricted-P-Computing/figures/fig23_simulation/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pssa_player.css">
+<style>
+  /* The page chrome, overridden inline by the active palette (pssa_palette.js). */
+  :root {
+    --page-bg: #ffffff;
+    --page-ink: #101828;
+    --fail-border: #e8c9c9;
+    --fail-bg: #fdf7f7;
+    --fail-ink: #a01c1c;
+  }
+  body {
+    margin: 0;
+    padding: 24px;
+    background: var(--page-bg);
+    color: var(--page-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Centred with auto margins, never a transform, which would resample the figure. */
+  #pssa {
+    width: min(1700px, calc(100vw - 48px));
+    margin: 0 auto;
+  }
+  /* The theme toolbar: one button per theme in pssa_palette.js. */
+  .themebar {
+    width: min(1700px, calc(100vw - 48px));
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  .themebar > span {
+    font-family: 'STIX Two Text', 'Times New Roman', serif;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #8a94a3;
+  }
+  .themebar button {
+    font: inherit;
+    font-family: 'STIX Two Text', 'Times New Roman', serif;
+    font-size: 14px;
+    color: #5c6b7d;
+    background: #ffffff;
+    border: 1px solid #dde2e8;
+    border-radius: 2px;
+    padding: 4px 10px;
+    cursor: pointer;
+  }
+  .themebar button:hover { border-color: #9aa5b1; }
+  .themebar button[aria-pressed="true"] {
+    color: #101828;
+    border-color: #9aa5b1;
+    background: #f1f3f6;
+  }
+  .themebar button:focus-visible { outline: 2px solid #9aa5b1; }
+  /* The figure caption, set like the report's. */
+  .figcap {
+    width: min(1700px, calc(100vw - 48px));
+    margin: 14px auto 0;
+    font-family: 'STIX Two Text', 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.45;
+    color: #101828;
+  }
+  .figcap .lab {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
+  .figcap i { font-style: italic; }
+  .figcap sub { font-size: 0.7em; line-height: 0; }
+  .fail {
+    font-family: 'STIX Two Text', 'Times New Roman', serif;
+    font-size: 15px;
+    padding: 14px 16px;
+    border: 1px solid var(--fail-border);
+    background: var(--fail-bg);
+    color: var(--fail-ink);
+  }
+</style>
+</head>
+<body>
+<div class="themebar" id="themebar" role="group" aria-label="Colour theme">
+  <span>Theme</span>
+</div>
+<div id="pssa"></div>
+<p class="figcap" id="figcap"></p>
+
+<!-- Every colour the figure uses; loads before the player. -->
+<script src="pssa_palette.js"></script>
+<script src="pssa_player.js"></script>
+<!-- Optional: window.pssaExport() records the figure to a video. -->
+<script src="pssa_export.js"></script>
+<script>
+/* The caption, read off the recording, so it always describes the run playing above it. */
+function fillCaption(data) {
+  var m = data.meta, r = data.stage3.result, L = data.stage3.L, n = m.n;
+  var f = function (v) { return v.toLocaleString('en-US'); };
+  var kg = function (l) { return 'KG<sub>' + l + ',' + l + '</sub>'; };
+  var ratio = Math.round(10 * (n - 1) * (n - 1) / (L * L)) / 10;
+  document.getElementById('figcap').innerHTML =
+    '<span class="lab">Figure 23 &nbsp;|&nbsp;</span> ' +
+    'The fallback method on a random cubic graph with ' + f(n) +
+    ' vertices at <i>s</i> = ' + m.max_cluster_size +
+    ', replayed from its recorded run. Partitioning for the fewest border ' +
+    'nodes gives ' + m.k + ' clusters with ' + f(m.T) + ' border nodes and ' +
+    f(m.cut) + ' cut edges. Each cluster is embedded on its own ' +
+    'hardware patch by PSSA wBC with its border nodes on the perimeter, and ' +
+    'during the cluster embedding the plot follows the geometric annealing ' +
+    'schedule and the PSSA cost function <i>E</i><sub>emb</sub>. The ' +
+    'clusters are then placed in a grid layout and every border node is ' +
+    'uniquely routed to the routing structure, where every cut edge is ' +
+    'realized due to its all-to-all structure, giving a ' +
+    (r.valid && r.eemb === r.m_total
+      ? 'complete and valid embedding of all ' + f(r.m_total) + ' edges'
+      : 'partial embedding of ' + f(r.eemb) + ' of ' + f(r.m_total) + ' edges') +
+    ' of the ' + f(n) + ' vertex cubic graph' +
+    ' on ' + kg(L) + ', about ' + ratio.toFixed(1) + ' times less area than ' +
+    'the complete graph embedding on ' + kg(n - 1) + '.';
+}
+
+/* The height left for the player once the theme bar, the caption and the padding are counted,
+   so the whole figure fits on one screen. */
+function fitHeight() {
+  function outer(el) {
+    var cs = getComputedStyle(el);
+    return el.offsetHeight + parseFloat(cs.marginTop) + parseFloat(cs.marginBottom);
+  }
+  var bs = getComputedStyle(document.body);
+  return window.innerHeight - parseFloat(bs.paddingTop) -
+         parseFloat(bs.paddingBottom) - outer(document.getElementById('themebar')) -
+         outer(document.getElementById('figcap'));
+}
+
+/* One button per theme; ?palette=<name> picks the one the page opens on. */
+function buildThemeBar(player) {
+  var bar = document.getElementById('themebar');
+  var all = window.PSSA_PALETTES;
+  if (!bar || !all) return;
+  var buttons = {};
+  function press(key) {
+    Object.keys(buttons).forEach(function (k) {
+      buttons[k].setAttribute('aria-pressed', String(k === key));
+    });
+  }
+  Object.keys(all).forEach(function (key) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = all[key].label || key;
+    b.addEventListener('click', function () {
+      if (player.setPalette(key)) press(key);
+    });
+    buttons[key] = b;
+    bar.appendChild(b);
+  });
+  var start = new URLSearchParams(location.search).get('palette');
+  if (start && player.setPalette(start)) press(start);
+  else press(window.PSSA_PALETTE.name);
+}
+
+// The plot draws its maths on a canvas, so the font has to be in before the
+// player paints; give up waiting after 3 s and fall back to Times.
+var fontsIn = (document.fonts && document.fonts.load)
+  ? Promise.race([
+      Promise.all([document.fonts.load("italic 14px 'STIX Two Text'"),
+                   document.fonts.load("14px 'STIX Two Text'")]),
+      new Promise(function (res) { setTimeout(res, 3000); })
+    ]).catch(function () {})
+  : Promise.resolve();
+
+Promise.all([fetch('trajectory.json'), fontsIn])
+  .then(function (both) {
+    var r = both[0];
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  })
+  .then(function (data) {
+    fillCaption(data);     // first, so its height is known when the player sizes
+    var player = new PSSAPlayer(document.getElementById('pssa'), data, {
+      annealSeconds: 26,   // wall-clock seconds for the whole anneal at 1x
+      loop: true,
+      fitHeight: fitHeight
+    });
+    buildThemeBar(player);
+    player.start();
+    window.pssaPlayer = player;
+  })
+  .catch(function (err) {
+    document.getElementById('pssa').innerHTML =
+      '<div class="fail">Could not load trajectory.json (' + err.message +
+      '). Serve this folder over HTTP (python -m http.server), since ' +
+      'fetch() will not read file:// URLs.</div>';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+CSR Stage 1: BFS-ball(target 0.9s) + T-FM, cap s=50, cubic
+====================================================================================================================================
+      pass 0: 398886 moves
+      pass 1: 21119 moves
+      pass 2: 2582 moves
+      pass 3: 291 moves
+      pass 4: 40 moves
+      pass 5: 2 moves
+      pass 6: 1 moves
+      pass 7: 0 moves
+n=  10,000,000 m=   14,999,998 k=   222,223 | graph    190.7 MB | gen   17.67s  init   14.23s  refine   317.16s (8 passes) | T/n 0.6627 -> 0.6325 | total   349.07s

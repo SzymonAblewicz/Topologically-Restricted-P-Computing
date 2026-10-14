@@ -1,0 +1,3 @@
+[cubic900_s30_seed2] graph n=900 m=1350 connected=True
+[cubic900_s30_seed2] partition: k=39 cut=427 T=603 (spectral, 440.0 s)
+[cubic900_s30_seed2] clusters: 39 by PSSA wBC, 0 by the complete graph embedding, 31.4 s

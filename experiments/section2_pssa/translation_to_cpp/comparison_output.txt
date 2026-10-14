@@ -1,0 +1,23 @@
+KingsGraphSchedule(L=6): T0=6.0315, Thalf=3.3435, tmax=300,000, pa0=0.095, pa_end=0.487
+Test graph: |V(I)|=20, |E(I)|=30
+
+[pure-Python pssa()]
+  wall time      : 29.558s
+  eemb           : 30/30  (coverage=1.000)
+  valid embedding: True
+  success        : True
+
+[C++ pssa_core]
+  wall time      : 0.957s
+  eemb           : 30/30  (coverage=1.000)
+  valid embedding: True
+  success        : True
+
+============================================================
+Speedup (python_time / cpp_time): 30.9x
+Both valid embeddings found     : True
+Coverage comparable              : python=30, cpp=30
+
+Sanity check via the public API (ImprovedPSSA using the C++ core):
+  PSSAResult(KingsGraph(L=6), ok 30/30 edges, 1.22s)
+  is_valid_embedding: True

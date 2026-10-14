@@ -1,0 +1,89 @@
+{
+  "random 20 nodes 30 edges": {
+    "n": 20,
+    "m": 30,
+    "L": 6,
+    "blind": {
+      "success": 12,
+      "runs": 20,
+      "mean_e_anneal": 29.55,
+      "mean_e_final": 29.55,
+      "mean_t_anneal": 0.25801545999129305,
+      "tmax": 300000
+    },
+    "gibbs": {
+      "success": 20,
+      "runs": 20,
+      "mean_e_anneal": 30,
+      "mean_e_final": 30,
+      "mean_t_anneal": 0.3393587650149129,
+      "tmax": 300000
+    },
+    "blind_equal_time": {
+      "success": 13,
+      "runs": 20,
+      "mean_e_anneal": 29.65,
+      "mean_e_final": 29.65,
+      "mean_t_anneal": 0.34248820500215515,
+      "tmax": 394579
+    }
+  },
+  "random 20 nodes 40 edges": {
+    "n": 20,
+    "m": 40,
+    "L": 11,
+    "blind": {
+      "success": 6,
+      "runs": 20,
+      "mean_e_anneal": 38.5,
+      "mean_e_final": 38.95,
+      "mean_t_anneal": 4.6129749299958345,
+      "tmax": 300000
+    },
+    "gibbs": {
+      "success": 12,
+      "runs": 20,
+      "mean_e_anneal": 39.45,
+      "mean_e_final": 39.6,
+      "mean_t_anneal": 3.8763914550014307,
+      "tmax": 300000
+    },
+    "blind_equal_time": {
+      "success": 5,
+      "runs": 20,
+      "mean_e_anneal": 37.75,
+      "mean_e_final": 38.35,
+      "mean_t_anneal": 3.438416775007499,
+      "tmax": 252097
+    }
+  },
+  "random cubic 24 nodes": {
+    "n": 24,
+    "m": 36,
+    "L": 7,
+    "blind": {
+      "success": 1,
+      "runs": 20,
+      "mean_e_anneal": 34.6,
+      "mean_e_final": 34.65,
+      "mean_t_anneal": 0.4006018100073561,
+      "tmax": 300000
+    },
+    "gibbs": {
+      "success": 6,
+      "runs": 20,
+      "mean_e_anneal": 35.25,
+      "mean_e_final": 35.25,
+      "mean_t_anneal": 0.763899125001626,
+      "tmax": 300000
+    },
+    "blind_equal_time": {
+      "success": 1,
+      "runs": 20,
+      "mean_e_anneal": 35,
+      "mean_e_final": 35,
+      "mean_t_anneal": 0.7542952199990396,
+      "tmax": 572063
+    }
+  }
+}

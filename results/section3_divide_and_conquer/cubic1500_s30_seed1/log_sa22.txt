@@ -1,0 +1,13 @@
+[cubic1500_s30_seed1] graph n=1500 m=2250 connected=True
+[cubic1500_s30_seed1] partition: k=67 cut=743 T=1028 (spectral, 298.0 s)
+[cubic1500_s30_seed1] clusters: 67 by PSSA wBC, 0 by the complete graph embedding, 20.1 s
+[cubic1500_s30_seed1]   corridor width 77: L=767, 7 unrouted, 310 s
+[cubic1500_s30_seed1]   corridor width 79: L=789, 7 unrouted, 363 s
+[cubic1500_s30_seed1]   corridor width 81: L=801, 9 unrouted, 550 s
+[cubic1500_s30_seed1]   corridor width 83: L=821, 6 unrouted, 284 s
+[cubic1500_s30_seed1]   corridor width 85: L=839, 10 unrouted, 349 s
+[cubic1500_s30_seed1]   corridor width 87: L=863, 7 unrouted, 231 s
+[cubic1500_s30_seed1]   corridor width 89: L=877, 10 unrouted, 274 s
+[cubic1500_s30_seed1]   corridor width 91: L=892, 7 unrouted, 240 s
+[cubic1500_s30_seed1]   corridor width 93: L=913, 4 unrouted, 253 s
+[cubic1500_s30_seed1] joined: L=913 valid=False 2246/2250 edges, 4 unrouted, 2854.6 s

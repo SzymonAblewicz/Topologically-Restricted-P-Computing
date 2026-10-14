@@ -1,0 +1,4 @@
+[cubic100_s30_seed6] graph n=100 m=150 connected=True
+[cubic100_s30_seed6] partition: k=4 cut=30 T=57 (recursive_bisection, 1.8 s)
+[cubic100_s30_seed6] clusters: 4 by PSSA wBC, 0 by the complete graph embedding, 14.1 s
+[cubic100_s30_seed6]   corridor width 3: L=24, 10 unrouted, 2 s

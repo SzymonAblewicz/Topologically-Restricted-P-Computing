@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<line x1="6.00" y1="6.00" x2="6.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="6.00" y1="6.00" x2="16.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="16.00" y1="6.00" x2="16.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="16.00" y1="6.00" x2="26.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="16.00" y1="6.00" x2="6.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="26.00" y1="6.00" x2="26.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="26.00" y1="6.00" x2="16.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="6.00" y1="16.00" x2="16.00" y2="16.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="16.00" y1="16.00" x2="16.00" y2="26.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="16.00" y1="16.00" x2="6.00" y2="26.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="26.00" y1="16.00" x2="16.00" y2="26.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="16.00" y1="26.00" x2="26.00" y2="26.00" stroke="#9aa3b2" stroke-width="1.1"/>
+<line x1="6.00" y1="6.00" x2="16.00" y2="6.00" stroke="#332288" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="16.00" y1="6.00" x2="26.00" y2="6.00" stroke="#332288" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="6.00" y1="16.00" x2="6.00" y2="26.00" stroke="#44AA99" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="6.00" y1="16.00" x2="16.00" y2="26.00" stroke="#44AA99" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="16.00" y1="16.00" x2="26.00" y2="16.00" stroke="#CC6677" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="16.00" y1="16.00" x2="26.00" y2="26.00" stroke="#CC6677" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="26.00" y1="16.00" x2="26.00" y2="26.00" stroke="#CC6677" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="6.00" y1="26.00" x2="16.00" y2="26.00" stroke="#44AA99" stroke-width="3.20" stroke-linecap="round"/>
+<circle cx="6.00" cy="6.00" r="3.40" fill="#332288"/>
+<circle cx="16.00" cy="6.00" r="3.40" fill="#332288"/>
+<circle cx="26.00" cy="6.00" r="3.40" fill="#332288"/>
+<circle cx="6.00" cy="16.00" r="3.40" fill="#44AA99"/>
+<circle cx="16.00" cy="16.00" r="3.40" fill="#CC6677"/>
+<circle cx="26.00" cy="16.00" r="3.40" fill="#CC6677"/>
+<circle cx="6.00" cy="26.00" r="3.40" fill="#44AA99"/>
+<circle cx="16.00" cy="26.00" r="3.40" fill="#44AA99"/>
+<circle cx="26.00" cy="26.00" r="3.40" fill="#CC6677"/>
+</svg>

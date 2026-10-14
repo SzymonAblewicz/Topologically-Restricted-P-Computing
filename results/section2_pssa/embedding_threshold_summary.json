@@ -1,0 +1,44 @@
+{
+  "6": {
+    "uniform": 18,
+    "gibbs": 20,
+    "uniform_time": 18,
+    "tmax_uniform_time": 353835
+  },
+  "7": {
+    "uniform": 18,
+    "gibbs": 22,
+    "uniform_time": 20,
+    "tmax_uniform_time": 283006
+  },
+  "8": {
+    "uniform": 22,
+    "gibbs": 26,
+    "uniform_time": 18,
+    "tmax_uniform_time": 262942
+  },
+  "9": {
+    "uniform": 18,
+    "gibbs": 26,
+    "uniform_time": 22,
+    "tmax_uniform_time": 244039
+  },
+  "10": {
+    "uniform": 24,
+    "gibbs": 28,
+    "uniform_time": 22,
+    "tmax_uniform_time": 238208
+  },
+  "11": {
+    "uniform": 20,
+    "gibbs": 26,
+    "uniform_time": 18,
+    "tmax_uniform_time": 222635
+  },
+  "12": {
+    "uniform": 20,
+    "gibbs": 26,
+    "uniform_time": 22,
+    "tmax_uniform_time": 253625
+  }
+}

@@ -1,0 +1,7 @@
+family,n_request,seed,s,n,m,T,L_plan,L_final,valid,cells,conflicts,self_dup,out_of_bounds,empty_chains,split_chains,edges_missing,lanes_checked,lane_mismatches,full_chains_compared,full_chains_differ,t_export,t_validate,first_error,error
+random_cubic,30000,1,50,30000,45000,18009,18891,18891,True,220732019,0,0,0,0,0,0,18009,0,,,14.0,7.0,,
+random_cubic,100000,1,50,100000,150000,59775,61489,61489,True,2346512291,0,0,0,0,0,0,20000,0,,,35.1,86.3,,
+random_cubic,300000,1,50,300000,450000,177964,180817,180817,True,20516165555,0,0,0,0,0,0,20000,0,,,241.7,993.0,,
+erdos_renyi,106301,4,50,100000,158882,48063,49286,49286,True,1660836335,0,0,0,0,0,0,20000,0,,,73.6,125.3,,
+erdos_renyi,1063440,50,50,1000000,1589456,471013,475158,475158,True,158121887484,0,0,0,0,0,0,20000,0,,,1270.9,12216.4,,
+random_cubic,1000000,1,50,1000000,1500000,596284,601714,601714,True,228841559401,0,0,0,0,0,0,20000,0,,,,3261.6,,"stream_validate_par.exe, 14 threads, 56 bands"

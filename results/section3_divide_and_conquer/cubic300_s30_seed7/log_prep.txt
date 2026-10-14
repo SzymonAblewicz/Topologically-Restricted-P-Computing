@@ -1,0 +1,3 @@
+[cubic300_s30_seed7] graph n=300 m=450 connected=True
+[cubic300_s30_seed7] partition: k=12 cut=116 T=179 (spectral, 11.8 s)
+[cubic300_s30_seed7] clusters: 12 by PSSA wBC, 0 by the complete graph embedding, 16.7 s

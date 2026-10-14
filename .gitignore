@@ -1,0 +1,16 @@
+# compiled C++ (python build.py makes them)
+*.pyd
+*.so
+*.exe
+experiments/section4_fallback/validation/stream_validate
+build/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# large run outputs (checkpoints, embeddings, partitions, exports)
+results/**/ckpt/
+results/**/phi/
+results/**/labels_*.json
+results/**/export/

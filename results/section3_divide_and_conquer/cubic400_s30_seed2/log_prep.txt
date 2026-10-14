@@ -1,0 +1,3 @@
+[cubic400_s30_seed2] graph n=400 m=600 connected=True
+[cubic400_s30_seed2] partition: k=16 cut=161 T=246 (spectral, 77.1 s)
+[cubic400_s30_seed2] clusters: 16 by PSSA wBC, 0 by the complete graph embedding, 45.0 s

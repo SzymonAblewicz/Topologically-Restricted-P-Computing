@@ -1,0 +1,5 @@
+[cubic800_s30_seed2] graph n=800 m=1200 connected=True
+[cubic800_s30_seed2] partition: k=35 cut=375 T=551 (spectral, 418.4 s)
+[cubic800_s30_seed2] clusters: 35 by PSSA wBC, 0 by the complete graph embedding, 48.7 s
+[cubic800_s30_seed2]   corridor width 49: L=354, 0 unrouted, 41 s
+[cubic800_s30_seed2] joined: L=354 valid=True 1200/1200 edges, 0 unrouted, 40.9 s
